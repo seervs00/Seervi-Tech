@@ -48,21 +48,21 @@ export const ServiceDummyData =[
     },
     {
         "Title":"Web Development ",
-        "Subtitle":"Driven by innovation and guided by experience, our development team turns ideas into reality.We work closely with you to build smart, reliable, and scalable digital products.",
+        "Subtitle":"We blend modern design with powerful backend functionality to ensure speed, security, and scalability — delivering web solutions that grow with your business.",
         "Icon": web_development_icon,
     },
     {
         "Title":" Custom Software Development",
-        "Subtitle":"Driven by innovation and guided by experience, our development team turns ideas into reality.We work closely with you to build smart, reliable, and scalable digital products.",
+        "Subtitle":"From idea to deployment, we handle the entire development lifecycle — ensuring seamless integration, long-term performance, and complete alignment with your business vision.",
         "Icon": custom_soft_icon,
     },
     {
         "Title":"Product Development",
-        "Subtitle":"Driven by innovation and guided by experience, our development team turns ideas into reality.We work closely with you to build smart, reliable, and scalable digital products.",
+        "Subtitle":"With a user-first approach and agile methodology, we ensure faster go-to-market, better usability, and long-term product growth",
         "Icon": product_development_icon,
     },
     {
         "Title":"Mobile App Development",
-        "Subtitle":"Driven by innovation and guided by experience, our development team turns ideas into reality.We work closely with you to build smart, reliable, and scalable digital products.",
+        "Subtitle":"Whether it’s a consumer-facing app or a powerful enterprise tool, we build mobile products that engage users and drive real results.",
         "Icon": mobile_app_icon,    }
 ]

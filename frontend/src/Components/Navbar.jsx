@@ -1,5 +1,5 @@
 import React, { useState,useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { assets } from '../assets/assets';
 
 const Navbar = () => {
@@ -30,22 +30,31 @@ const Navbar = () => {
         { name: "Risk & Compliance Management", path: "/management/risk-compliance" }
       ]
      },
-    { name: 'Contact Us', path: '/' },
+    { name: 'Contact Us', path: '/contact' },
     { name: 'About Us', path: '/' },
 ];
 
 
 
+const location =useLocation()
+
 const [isScrolled, setIsScrolled] =useState(false)
 const [isMenuOpen, setIsMenuOpen] =useState(false);
 
 useEffect(() => {
-    const handleScroll = () => {
-        setIsScrolled(window.scrollY > 10);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-}, []);
+  const handleScroll = () => {
+    setIsScrolled(window.scrollY > 10 || location.pathname !== '/');
+  };
+
+  handleScroll(); // Run once on load or route change
+
+  window.addEventListener('scroll', handleScroll);
+
+  return () => {
+    window.removeEventListener('scroll', handleScroll);
+  };
+}, [location.pathname]); // 🔥 Add this
+
 
 return (
 
@@ -59,7 +68,7 @@ return (
             {/* Desktop Nav */}
             <div className="hidden md:flex items-center gap-4 lg:gap-8">
           {navLinks.map((link, i) => (
-         <div key={i} className="relative group  ">
+         <div key={i} className="relative group " >
           <Link
           to={link.path}
         className={`group flex flex-col gap-0.5 ${isScrolled ? "text-gray-700" : "text-white"}`}
@@ -71,12 +80,15 @@ return (
         {link.children && (
     <div className="absolute top-full left-0 z-50">
       <div className="pt-2 group-hover:block hidden">
-        <div className="bg-white text-gray-800 shadow-md rounded-md min-w-max transition-opacity duration-200">
+        <div className="bg-white text-gray-800 shadow-md rounded-md min-w-max transition-opacity duration-200" 
+        >
           {link.children.map((child, j) => (
             <Link
+            
               key={j}
               to={child.path}
               className="block px-4 py-2 hover:bg-gray-100 whitespace-nowrap"
+              
             >
               {child.name}
             </Link>
@@ -107,13 +119,17 @@ return (
                 </button>
 
                 {navLinks.map((link, i) => (
-  <div key={i} className="w-full flex flex-col items-center group relative">
-    <Link to={link.path} className="py-2 text-center w-full">
+  <div key={i} className="w-full flex flex-col items-center group relative"
+ >
+    <Link to={link.path} className={`py-2 text-center w-full ${isScrolled ? "text-gray-700" : "text-white"}`}
+    
+    >
       {link.name}
     </Link>
 
     {link.children && (
-      <div className="flex flex-col w-full items-center transition-all duration-300 max-h-0 group-hover:max-h-96 overflow-hidden">
+      <div className="flex flex-col w-full items-center transition-all duration-300 max-h-0 group-hover:max-h-96 overflow-hidden"
+        >
         {link.children.map((child, j) => (
           <Link
             key={j}
