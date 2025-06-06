@@ -2,7 +2,7 @@ import logo from './Tech.png'
 import softwareimg from './softwaresimg.jpg'
 import enterprisesimg from './enterprisesimg.jpg'
 import innovatorsimg from './Innovators.webp'
-
+import bgimg from "./bg1.jpg"
 import team_icon from './team_icon.webp'
 import custom_soft_icon  from'./custom_soft_icon.webp'
 import mobile_app_icon  from "./mobile_app_icon.webp"
@@ -19,7 +19,8 @@ export const assets = {
     team_icon,
     custom_soft_icon,
     mobile_app_icon,
-    product_development_icon
+    product_development_icon,
+    bgimg
 }
 
 export const CardDummyData = [
