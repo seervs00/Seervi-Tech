@@ -17,7 +17,7 @@ const Services = () => {
                 <img src={item.Icon} alt="" className='h-[104px] w-auto cursor-pointer' />
                 </Link>
               </div>
-              <div className='mx-10 flex flex-col gap-3'>
+              <div className='md:mx-10 flex flex-col gap-3'>
              <a href="">
               <p className='text-center text-xl text-black font-bold cursor-pointer'>{item.Title}</p></a>
       
