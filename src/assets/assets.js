@@ -1,4 +1,4 @@
-import logo from './Tech.png'
+import logo from './logo2.jpeg'
 import softwareimg from './softwaresimg.jpg'
 import enterprisesimg from './enterprisesimg.jpg'
 import innovatorsimg from './Innovators.webp'
@@ -8,8 +8,13 @@ import custom_soft_icon  from'./custom_soft_icon.webp'
 import mobile_app_icon  from "./mobile_app_icon.webp"
 import product_development_icon from './product_development_icon.webp'
 import web_development_icon from "./web_development_icon.webp"
-
-
+import flash_icon from "./flash.png"
+import interlock_icon from "./interlock.png"
+import lightbox_icon from "./lightbox.png"
+import time_icon from "./time.png"
+import mail_icon from "./mail.png"
+import location_icon from "./location.png"
+import phone_icon from "./telephone.png"
 export const assets = {
     logo,
     softwareimg,
@@ -20,7 +25,10 @@ export const assets = {
     custom_soft_icon,
     mobile_app_icon,
     product_development_icon,
-    bgimg
+    bgimg,
+    mail_icon,
+    phone_icon,
+    location_icon
 }
 
 export const CardDummyData = [
@@ -59,11 +67,50 @@ export const ServiceDummyData =[
     },
     {
         "Title":"Product Development",
-        "Subtitle":"With a user-first approach and agile methodology, we ensure faster go-to-market, better usability, and long-term product growth",
+        "Subtitle":"With a user-first approach and agile methodology, we ensure faster go-to-market, better usability, continuous innovation, and long-term product growth.",
         "Icon": product_development_icon,
     },
     {
         "Title":"Mobile App Development",
-        "Subtitle":"Whether it’s a consumer-facing app or a powerful enterprise tool, we build mobile products that engage users and drive real results.",
+        "Subtitle":"Whether it is a consumer-facing app or a powerful enterprise tool, we build mobile products that engage users and drive real results.",
         "Icon": mobile_app_icon,    }
 ]
+
+export const TestimonialDummyData =[
+   {
+    "Title":"Boltshift",
+    "Text":"We want to partner with people who align with our vision! Earlier, a lot of our time was consumed by administrative tasks, but now we can concentrate on scaling and supporting our team more effectively.",
+    "Image": "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200",
+    "Name": "Mark Zellers",
+    "JobTitle":"CEO Co-founder",
+    "Icon":flash_icon
+
+    
+   },
+   {
+    "Title":"Lightbox",
+    "Text":"This incredible tool saves me from switching out of Salesforce — I can quickly build custom proposals with flexible pricing options and instantly get my manager's approval in just 36 minutes..",
+    "Image":"https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=200",
+    "JobTitle":"founder",
+    "Name":"Liam Johnson",
+    "Icon":lightbox_icon
+
+   },
+   {
+    "Title":"Interlock",
+    "Text":"Being based in Europe, the latest Data Protection Regulation now requires us to carefully and proactively seek out trusted service providers who strictly adhere to these compliance standards.",
+    "Image": "https://images.unsplash.com/photo-1701615004837-40d8573b6652?q=80&w=200",
+    "Name":"Sophia Lee",
+    "JobTitle":"director of Sales",
+    "Icon":interlock_icon
+   },
+   {
+    "Title":"Capsule",
+    "Text":"We are looking for people who share our vision! Most of our time used to be taken up by most of the alternate administrative work whereas now we can focus on building out to help our employees",
+    "Image": "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200",
+    "Name": "Emma Rodriguez",
+    "JobTitle":"CEO",
+    "Icon":time_icon
+   }
+]
+

@@ -5,35 +5,39 @@ import { assets } from '../assets/assets';
 const Navbar = () => {
 
   const navLinks = [
-    { name: 'Software Development Services', path: '/',
+    { name: 'Software Development Services',
       children:[
-        { name: 'Product Development Services', path: '/web-development' },
-        { name: 'Web Development Services', path: '/web' },
-        { name: 'Hire a Development Team', path: '/web' },
-        { name: 'App Development Services', path: '/Appdev' },
+        { name: 'Product Development Services', path: '/' },
+        { name: 'Web Development Services', path: '/' },
+        { name: 'Webside Designing Services', path: '/' },
+        { name: 'Hire a Development Team', path: '/' },
+
       ]
      },
     { 
-      name: 'Enterprise Solutions', 
-      path: '/', 
+      name: 'Studio Solutions', 
+      
       children: [
-        { name: 'mPresent', path: '/web-development' },
-        { name: 'Task Hours', path: '/app-development' },
+        { name: 'Sports Presentation', path: '/sport' },
+        { name: 'Education Experience', path: '/' },
+        { name: 'Healthcare Visualization', path: '/' },
       ] 
     },
-    { name: 'Management Service', path: '/',
+    { name: 'Hosting Services',
       children: [
-        { name: "Project Management", path: "/management/project" },
-        { name: "IT Infrastructure Management", path: "/management/it-infrastructure" },
-        { name: "Business Process Outsourcing", path: "/management/bpo" },
-        { name: "Operations Consulting", path: "/management/operations-consulting" },
-        { name: "Risk & Compliance Management", path: "/management/risk-compliance" }
+        { name: "Web Hosting Services", path: "/" },
+        { name: "Domain Registration", path: "/" },
+  
       ]
      },
-    { name: 'Contact Us', path: '/contact' },
-    { name: 'About Us', path: '/' },
+    // { name: 'Contact Us', path: '/#contact' },
+    // { name: 'About Us', path: '/' },
 ];
+const [openIndex, setOpenIndex] = useState(null);
 
+  const toggleSubmenu = (index) => {
+    setOpenIndex(prev => (prev === index ? null : index));
+  };
 
 
 const location =useLocation()
@@ -69,13 +73,13 @@ return (
             <div className="hidden md:flex items-center gap-4 lg:gap-8">
           {navLinks.map((link, i) => (
          <div key={i} className="relative group " >
-          <Link
-          to={link.path}
+          <div
+          
         className={`group flex flex-col gap-0.5 ${isScrolled ? "text-gray-700" : "text-white"}`}
            >
        {link.name}
        <div className={`${isScrolled ? "bg-gray-700" : "bg-white"} h-0.5 w-0 group-hover:w-full transition-all duration-300`} />
-        </Link>
+        </div>
 
         {link.children && (
     <div className="absolute top-full left-0 z-50">
@@ -98,53 +102,141 @@ return (
     </div>
   )}
   </div>
-))}         
+)
+)}
+             <div className="relative group "> 
+             <Link
+          to='/#contact'
+        className={`group flex flex-col gap-0.5 ${isScrolled ? "text-gray-700" : "text-white"}`}
+           >
+             Contact Us
+       <div className={`${isScrolled ? "bg-gray-700" : "bg-white"} h-0.5 w-0 group-hover:w-full transition-all duration-300`} />
+        </Link>
+             </div>
+             <div className="relative group "> 
+             <Link
+          to='/about'
+        className={`group flex flex-col gap-0.5 ${isScrolled ? "text-gray-700" : "text-white"}`}
+           >
+             About Us
+       <div className={`${isScrolled ? "bg-gray-700" : "bg-white"} h-0.5 w-0 group-hover:w-full transition-all duration-300`} />
+        </Link>
+             </div>
             </div>
+
             {/* Mobile Menu Button */}
             <div className="flex items-center gap-3 md:hidden">
-                <svg onClick={() => setIsMenuOpen(!isMenuOpen)} className={`h-6 w-6 cursor-pointer ${isScrolled ? "invert" : ""}`} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                    <line x1="4" y1="6" x2="20" y2="6" />
-                    <line x1="4" y1="12" x2="20" y2="12" />
-                    <line x1="4" y1="18" x2="20" y2="18" />
-                </svg>
-            </div>
-
-            {/* Mobile Menu */}
-            <div className={`fixed top-0 left-0 w-full h-screen bg-white text-base flex flex-col md:hidden items-center justify-center gap-6 font-medium text-gray-800 transition-all duration-500 ${isMenuOpen ? "translate-x-0" : "-translate-x-full"}`}>
-                <button className="absolute top-4 right-4" onClick={() => setIsMenuOpen(false)}>
-                    <svg className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                        <line x1="18" y1="6" x2="6" y2="18" />
-                        <line x1="6" y1="6" x2="18" y2="18" />
-                    </svg>
-                </button>
-
-                {navLinks.map((link, i) => (
-  <div key={i} className="w-full flex flex-col items-center group relative"
- >
-    <Link to={link.path} className={`py-2 text-center w-full ${isScrolled ? "text-gray-700" : "text-white"}`}
-    
-    >
-      {link.name}
-    </Link>
-
-    {link.children && (
-      <div className="flex flex-col w-full items-center transition-all duration-300 max-h-0 group-hover:max-h-96 overflow-hidden"
+        <svg
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          className={`h-6 w-8 cursor-pointer bg-gray-300 ${isScrolled ? "invert" : ""}`}
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          viewBox="0 0 24 24"
         >
-        {link.children.map((child, j) => (
-          <Link
-            key={j}
-            to={child.path}
-            onClick={() => setIsMenuOpen(false)}
-            className="text-sm text-gray-600 py-1  hover:bg-gray-200 whitespace-nowrap"
-          >
-            {child.name}
-          </Link>
-        ))}
+          <line x1="4" y1="6" x2="20" y2="6" />
+          <line x1="4" y1="12" x2="20" y2="12" />
+          <line x1="4" y1="18" x2="20" y2="18" />
+        </svg>
       </div>
-    )}
-  </div>
-))}
+
+      {/* Mobile Menu */}
+      <div
+        className={`fixed top-0 right-0 w-3/4 h-screen bg-gray-100 text-base flex flex-col md:hidden items-center justify-start pt-16 gap-4 font-medium text-gray-800 transition-transform duration-500 z-50 ${
+          isMenuOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        {/* Close Button */}
+        <button
+          className="absolute top-4 right-4"
+          onClick={() => setIsMenuOpen(false)}
+        >
+          <svg
+            className="h-6 w-6"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            viewBox="0 0 24 24"
+          >
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+        </button>
+
+        {/* Navigation Links */}
+        {navLinks.map((link, i) => (
+          <div key={i} className="w-full flex flex-col items-center relative">
+            <div
+              onClick={() => toggleSubmenu(i)}
+              className="flex items-center justify-between w-full px-6 py-2 cursor-pointer"
+            >
+              <span>{link.name}</span>
+              {link.children && (
+                <span>
+                  {openIndex === i ? (
+                    <svg
+                      className="w-4 h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M19 9l-7 7-7-7" />
+                    </svg>
+                  ) : (
+                    <svg
+                      className="w-4 h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M9 5l7 7-7 7" />
+                    </svg>
+                  )}
+                </span>
+              )}
             </div>
+
+            {/* Submenu */}
+            {link.children && (
+              <div
+                className={`flex flex-col w-full items-center overflow-hidden transition-all duration-300 border border-gray-200  ${
+                  openIndex === i ? "max-h-96" : "max-h-0"
+                }`}
+              >
+                {link.children.map((child, j) => (
+                  <Link
+                    key={j}
+                    to={child.path}
+                    onClick={() => setIsMenuOpen(false)}
+                    className="text-sm text-gray-600 py-1 hover:bg-gray-200 w-full px-6"
+                  >
+                    {child.name}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
+        ))}
+
+        {/* Extra static links */}
+        <Link
+          to="/#contact"
+          onClick={() => setIsMenuOpen(false)}
+          className="py-2 px-6 w-full hover:bg-gray-200"
+        >
+          Contact Us
+        </Link>
+        <Link
+          to="/about"
+          
+          onClick={() => setIsMenuOpen(false)}
+          className="py-2 px-6 w-full hover:bg-gray-200"
+        >
+          About Us
+        </Link>
+      </div>
         </nav>
    
 );
