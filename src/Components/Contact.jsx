@@ -15,8 +15,7 @@ const Contact = () => {
       <div className="flex flex-col md:flex-row items-start justify-center w-full max-w-7xl">
         {/* Left Image Section */}
         <div
-          className="w-full md:w-1/2 h-[538px] overflow-hidden bg-cover bg-center shadow-md md:rounded-l-xl"
-          style={{ backgroundImage: 'url("/src/assets/contact.jpg")' }}
+          className='w-full md:w-1/2 h-[538px] overflow-hidden bg-cover bg-center shadow-md md:rounded-l-xl bg-[url("/src/assets/contact.jpg")]'
         >
           <div className="w-full h-full bg-black/40 text-white flex items-end p-10 text-xl font-semibold">
             This platform takes the hassle out of website development, making online processes easy to handle.
