@@ -69,7 +69,7 @@ const Contact = () => {
               className="w-full mt-1 p-2 h-32 border border-gray-400 rounded resize-none outline-none focus:border-indigo-300"
               id="message"
               placeholder="Your message..."
-              required
+              
             ></textarea>
           </div>
 
