@@ -57,8 +57,7 @@ useEffect(() => {
   return () => {
     window.removeEventListener('scroll', handleScroll);
   };
-}, [location.pathname]); // 🔥 Add this
-
+}, [location.pathname]);
 
 return (
 
@@ -66,7 +65,7 @@ return (
 
             {/* Logo */}
             <Link to="/" className="flex items-center ">
-                <img src={assets.logo} alt="logo" className={`h-9 ${isScrolled && "invert opacity-80"}`} />
+                <img src={assets.logo} alt="logo" className={`h-9 `} />
             </Link>
 
             {/* Desktop Nav */}
@@ -142,7 +141,7 @@ return (
 
       {/* Mobile Menu */}
       <div
-        className={`fixed top-0 right-0 w-3/4 h-screen bg-gray-100 text-base flex flex-col md:hidden items-center justify-start pt-16 gap-4 font-medium text-gray-800 transition-transform duration-500 z-50 ${
+        className={`fixed top-0 right-0 w-3/4 h-screen bg-gray-300 text-base flex flex-col md:hidden items-center justify-start pt-16 gap-4 font-medium text-gray-800 transition-transform duration-500 z-50 ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -201,7 +200,7 @@ return (
             {/* Submenu */}
             {link.children && (
               <div
-                className={`flex flex-col w-full items-center overflow-hidden transition-all duration-300 border border-gray-200  ${
+                className={`flex flex-col w-full items-center overflow-hidden transition-all duration-300 border border-gray-100  ${
                   openIndex === i ? "max-h-96" : "max-h-0"
                 }`}
               >
@@ -224,7 +223,7 @@ return (
         <Link
           to="/#contact"
           onClick={() => setIsMenuOpen(false)}
-          className="py-2 px-6 w-full hover:bg-gray-200"
+          className="py-2 px-6 w-full border-b-3 border-gray-100  hover:bg-gray-200 "
         >
           Contact Us
         </Link>
@@ -232,7 +231,7 @@ return (
           to="/about"
           
           onClick={() => setIsMenuOpen(false)}
-          className="py-2 px-6 w-full hover:bg-gray-200"
+          className="py-2 px-6 w-full border-b-3 border-gray-100  hover:bg-gray-200"
         >
           About Us
         </Link>

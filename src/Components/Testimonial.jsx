@@ -13,11 +13,6 @@ const Testimonial = () => {
               <div key={index}
               className="flex flex-col gap-4 relative max-w-160 rounded-xl overflow-hidden bg-gray-200 text-gray-500/90  shadow-[0px_4px_rgba(0,0,0,0.02)]  py-10 md:px-10 px-4
               border border-transparent hover:border-indigo-600 transition-all duration-300"> 
-               <div className='flex  gap-4 items-center' >
-
-                   <img src={item.Icon} alt="Icon" className='h-9 w-9' />
-                   <p className='font-bold text-black text-2xl'>{item.Title}</p>
-               </div>
                <div>
                  <p className=' text-xl' >{item.Text}</p>
                </div>

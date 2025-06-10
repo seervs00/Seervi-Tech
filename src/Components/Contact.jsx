@@ -4,8 +4,8 @@ import { assets } from '../assets/assets'
 
 const Contact = () => {
   return (
-    <div id='contact' className="flex flex-col items-center px-4 md:px-16 py-20 bg-gray-300">
-      {/* Header Section */}
+    <div id='contact' className="flex flex-col items-center px-4 md:px-16 py-20 bg-gray-400">
+     
       <div className="flex flex-col text-center gap-6 pb-16">
         <p className="text-4xl md:text-[40px] font-bold">Your journey to greatness starts here</p>
         <p className="text-xl text-gray-600">Discover how we can create something great together.</p>
@@ -81,7 +81,7 @@ const Contact = () => {
           </button>
 
           <p className="pt-3">
-            Or drop us a message via <a href="mailto:wwww@gmail.com" className="text-blue-500 hover:text-blue-700">email</a>
+            Or drop us a message via <a href="mailto:seervitechlabs@gmail.com" className="text-blue-500 hover:text-blue-700">email</a>
           </p>
         </form>
       </div>
@@ -99,7 +99,7 @@ const Contact = () => {
             <img src={assets.mail_icon} alt="Email Icon" className="h-9 w-9" />
             <p className="font-semibold">Email</p>
             <p>Our team is here to help</p>
-            <a href="mailto:wwww@gmail.com" className="text-blue-500">wwww@gmail.com</a>
+            <a href="mailto:seervitechlabs@gmail.com" className="text-blue-500  hover:text-red-500">seervitechlabs@gmail.com</a>
           </div>
 
           {/* Office Location */}
@@ -107,7 +107,7 @@ const Contact = () => {
             <img src={assets.location_icon} alt="Location Icon" className="h-9 w-9" />
             <p className="font-semibold">Office</p>
             <p>Visit our corporate HQ</p>
-            <p className="text-blue-500">123 Tech Street, City, Country</p>
+            <p className="text-blue-500 max-w-52"> Bharat Communication Bus Stand,jaitaran Rajasthan</p>
           </div>
 
           {/* Phone */}
@@ -115,7 +115,7 @@ const Contact = () => {
             <img src={assets.phone_icon} alt="Phone Icon" className="h-9 w-9" />
             <p className="font-semibold">Phone</p>
             <p>Call us anytime</p>
-            <a href="tel:+1234567890" className="text-blue-500">+123 456 7890</a>
+            <a href="tel:+91 9462540114" className="text-blue-500 hover:text-red-500">+91 9462540114</a>
           </div>
         </div>
       </div>
