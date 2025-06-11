@@ -1,7 +1,7 @@
 import logo from './logo2.jpeg'
 import softwareimg from './softwaresimg.jpg'
 import enterprisesimg from './enterprisesimg.jpg'
-import innovatorsimg from './Innovators.webp'
+import innovatorsimg from './Innovators.jpg'
 import bgimg from "./bg1.jpg"
 import team_icon from './team_icon.webp'
 import custom_soft_icon  from'./custom_soft_icon.webp'
@@ -11,6 +11,7 @@ import web_development_icon from "./web_development_icon.webp"
 import mail_icon from "./mail.png"
 import location_icon from "./location.png"
 import phone_icon from "./telephone.png"
+import sportsrep from "./sportsp.jpg"
 
 export const assets = {
     logo,
@@ -25,7 +26,8 @@ export const assets = {
     bgimg,
     mail_icon,
     phone_icon,
-    location_icon
+    location_icon,
+    sportsrep
 }
 
 export const CardDummyData = [
@@ -105,3 +107,23 @@ export const TestimonialDummyData =[
    }
 ]
 
+export const SportsPresentationFeatureData = [
+    {
+        "Title":"Team & Player Management",
+    },
+    {
+        "Title":"Event & Match Scheduling",
+    },
+    {
+        "Title":" Mobile-Friendly Design",
+    },
+    {
+        "Title":" Performance Tracking",
+    },
+    {
+        "Title":"User Roles & Access Control",
+    },
+    {
+        "Title":"News & Blog System",
+    }
+]

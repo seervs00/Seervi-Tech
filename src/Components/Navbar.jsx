@@ -7,10 +7,10 @@ const Navbar = () => {
   const navLinks = [
     { name: 'Software Development Services',
       children:[
-        { name: 'Product Development Services', path: '/' },
-        { name: 'Web Development Services', path: '/' },
-        { name: 'Webside Designing Services', path: '/' },
-        { name: 'Hire a Development Team', path: '/' },
+        { name: 'Product Development Services', path: '/software/productdevelopment' },
+        { name: 'Web Development Services', path: '/software/webdevelopment' },
+        { name: 'Webside Designing Services', path: '/software/webdesign' },
+        { name: 'Hire a Development Team', path: '/software/developerteam' },
 
       ]
      },
@@ -18,20 +18,18 @@ const Navbar = () => {
       name: 'Studio Solutions', 
       
       children: [
-        { name: 'Sports Presentation', path: '/sport' },
-        { name: 'Education Experience', path: '/' },
-        { name: 'Healthcare Visualization', path: '/' },
+        { name: 'Sports Presentation', path: '/sports/presentation' },
+        { name: 'Education Experience', path: '/sports/education ' },
+        { name: 'Healthcare Visualization', path: '/sports/healthcare' },
       ] 
     },
     { name: 'Hosting Services',
       children: [
-        { name: "Web Hosting Services", path: "/" },
-        { name: "Domain Registration", path: "/" },
+        { name: "Web Hosting Services", path: "/web/hosting" },
+        { name: "Domain Registration", path: "/domain/registration" },
   
       ]
      },
-    // { name: 'Contact Us', path: '/#contact' },
-    // { name: 'About Us', path: '/' },
 ];
 const [openIndex, setOpenIndex] = useState(null);
 
