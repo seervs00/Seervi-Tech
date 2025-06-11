@@ -33,17 +33,17 @@ export const assets = {
 export const CardDummyData = [
     {
        "Title":"Enterprises",
-       "Subtitle":"Scale up your business and become more competitive through customized software solutions tailor-made to your needs.",
+       "Subtitle":"Enhance your company’s reach and resilience using adaptive software tools designed to meet your specific business needs.",
        "Image":enterprisesimg,
     },
     {
         "Title":"Innovators",
-        "Subtitle":"Leverage our technical expertise and ongoing support to successfully build disruptive solutions that transform industries.",
+        "Subtitle":"Drive meaningful change with forward-thinking solutions crafted through proven technical expertise and collaborative support",
         "Image":innovatorsimg,
      },
      {
         "Title":"Software Companies",
-        "Subtitle":"Reduce development costs, gain a competitive advantage and deliver high-quality software solutions under your own brand name.",
+        "Subtitle":"Cut down development costs, improve operational efficiency, and launch premium software solutions fully under your brand identity",
         "Image":softwareimg,
      }
 ]

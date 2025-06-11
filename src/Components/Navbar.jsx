@@ -45,10 +45,11 @@ const [isMenuOpen, setIsMenuOpen] =useState(false);
 
 useEffect(() => {
   const handleScroll = () => {
-    setIsScrolled(window.scrollY > 10 || location.pathname !== '/');
+    const activepath = ['/', '/sports/presentation']
+    setIsScrolled(window.scrollY > 10 || !activepath.includes(location.pathname));
   };
 
-  handleScroll(); // Run once on load or route change
+  handleScroll(); 
 
   window.addEventListener('scroll', handleScroll);
 
