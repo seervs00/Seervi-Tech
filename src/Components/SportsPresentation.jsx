@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom'
 import { assets } from '../assets/assets'
 const SportsPresentation = () => {
   return (
-    <div className="flex flex-col  xl:flex-row items-center justify-center  bg-[url('/src/assets/sports.jpg')] bg-no-repeat bg-cover bg-center text-white min-h-auto px-6 md:px-16 lg:px-24 xl:px-32 py-20 gap-12 md:gap-20">
+    <div className="flex flex-col  xl:flex-row items-center justify-center  bg-[url('/src/assets/sports.jpg')] bg-no-repeat bg-cover bg-center text-white min-h-auto px-4 md:px-16 lg:px-20 xl:px-28 py-20 gap-12 md:gap-20">
   
     {/* Text Section */}
-    <div className="max-w-1/2">
+    <div className="">
       <p className="bg-gray-500 text-center text-white px-4 py-2 text-2xl sm:text-3xl font-bold rounded-full mt-10 md:mt-20 inline-block">
         Sports Presentation
       </p>
@@ -15,7 +15,7 @@ const SportsPresentation = () => {
         PrimeSport Representation & Management.
       </h1>
   
-      <p className="text-lg md:text-2xl font-medium mt-4 max-w-150 text-white font-bold">
+      <p className="text-lg md:text-2xl text-cyan-900 mt-4 max-w-150  font-bold">
         We design intuitive sports management systems that keep everything connected — teams, schedules, stats, and more.
       </p>
   
