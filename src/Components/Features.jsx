@@ -4,7 +4,7 @@ import { CardDummyData } from '../assets/assets'
 
 const Features = () => {
   return (
-    <div className='flex flex-col items-center px-6 md:px-16 lg:px-16 bg-slate-5 py-20 bg-gray-600'>
+    <div className='flex flex-col items-center px-6 md:px-16 lg:px-16 bg-slate-5 py-20  bg-gradient-to-b from-gray-700 to-cyan-50 '>
         <Title title="Empowering the Visionaries of Tomorrow" subTitle="We work with select clients to deliver strategic, scalable tech—let’s explore how we can help you."/>
 
      <div className='flex flex-wrap items-center justify-center gap-6 mt-20 '>

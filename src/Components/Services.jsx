@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 const Services = () => {
   return (
-    <div className='flex flex-col items-center px-4 md:px-16 lg:px-16  py-20 bg-gray-500/75'>
+    <div className='flex flex-col items-center px-4 md:px-16 lg:px-16  py-20 bg-gradient-to-b from-gray-600 to-indigo-50'>
         <Title title="Start Exploring Our Expertise" subTitle="Unlock a world of potential through our comprehensive services."/>
 
         <div className='flex flex-wrap items-center justify-center gap-10 mt-20 '>

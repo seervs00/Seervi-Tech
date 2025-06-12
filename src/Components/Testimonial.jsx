@@ -4,7 +4,7 @@ import { TestimonialDummyData } from '../assets/assets'
 const Testimonial = () => {
  
     return (
-      <div className='flex flex-col items-center px-4 md:px-16 lg:px-16  py-20 bg-gray-600 '>
+      <div className='flex flex-col items-center px-4 md:px-16 lg:px-16  py-20 bg-gradient-to-b from-gray-900 to-cyan-50 '>
          <div className={`flex flex-col justify-center items-center text-center `}>
          <h1 className={`text-4xl md:text-[40px] font-bold text-gray-950 `}>Hear It From Us, But Check Yourself</h1>
          </div>

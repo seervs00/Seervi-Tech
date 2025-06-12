@@ -85,7 +85,7 @@ const About = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 bg-gradient-to-r from-purple-600 to-indigo-700 text-white text-center space-y-6">
+      <section className="py-16 bg-gradient-to-r from-purple-500 to-indigo-600 text-white text-center space-y-6">
         <h2 className="text-3xl font-bold">Let's Build Something Great</h2>
         <p className="max-w-3xl mx-auto text-blue-100 text-lg">
           Partner with Seervi Tech Lab to engineer impactful software experiences for the digital era.

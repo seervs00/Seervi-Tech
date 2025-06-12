@@ -4,11 +4,11 @@ import { assets } from '../assets/assets'
 
 const Contact = () => {
   return (
-    <div id='contact' className="flex flex-col items-center px-4 md:px-16 py-20 bg-gray-400">
+    <div id='contact' className="flex flex-col items-center px-4 md:px-16 py-20 bg-gradient-to-b from-gray-600 to-indigo-50">
      
       <div className="flex flex-col text-center gap-6 pb-16">
         <p className="text-4xl md:text-[40px] font-bold">Your journey to greatness starts here</p>
-        <p className="text-xl text-gray-600">Discover how we can create something great together.</p>
+        <p className="text-xl ">Discover how we can create something great together.</p>
       </div>
 
       {/* Image + Form */}
