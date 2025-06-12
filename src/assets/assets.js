@@ -12,7 +12,7 @@ import mail_icon from "./mail.png"
 import location_icon from "./location.png"
 import phone_icon from "./telephone.png"
 import sportsrep from "./sportsp.jpg"
-
+import arrow from './arrow.png'
 export const assets = {
     logo,
     softwareimg,
@@ -27,7 +27,8 @@ export const assets = {
     mail_icon,
     phone_icon,
     location_icon,
-    sportsrep
+    sportsrep,
+    arrow
 }
 
 export const CardDummyData = [

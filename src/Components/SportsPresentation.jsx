@@ -20,9 +20,13 @@ const SportsPresentation = () => {
       </p>
   
       <Link to="https://162e020c.sport-studio.pages.dev/">
-        <button className="text-lg sm:text-xl font-bold rounded-full bg-red-500 px-6 py-3 sm:py-4 mt-6 sm:mt-8 hover:bg-blue-500 transition">
-          Continue to login
-        </button>
+      <button className="group flex items-center text-lg sm:text-xl font-bold rounded-full gap-5 bg-red-500 px-6  py-3 sm:py-4 mt-6 sm:mt-8 hover:bg-red-400 transition">
+  Continue to login
+  <span className="inline-block transition-transform duration-300 group-hover:translate-x-4">
+    <img src={assets.arrow} alt="" className="h-9 w-9 rounded-full" />
+  </span>
+</button>
+
       </Link>
     </div>
   
