@@ -13,7 +13,8 @@ const About = () => {
       </section>
 
       {/* Our Mission */}
-      <section className="px-6 md:px-20 py-16 bg-blue-200 text-center space-y-6">
+      <div className=" bg-gradient-to-b from-blue-300 to-cyan-100">
+      <section className="px-6 md:px-20 py-16   text-center space-y-6">
         <h2 className="text-3xl font-bold text-blue-700">Our Mission</h2>
         <p className="max-w-4xl mx-auto text-gray-600 text-lg">
           To deliver precision-engineered software solutions that empower industries through innovation, performance, and reliability. We aim to be a technology enabler across sectors by transforming ideas into intelligent digital ecosystems.
@@ -21,7 +22,7 @@ const About = () => {
       </section>
 
       {/* Our Values */}
-      <section className="bg-cyan-100 py-16 px-6 md:px-20 text-center space-y-10">
+      <section className=" bg-gradient-to-b py-16 px-6 md:px-20 text-center space-y-10">
         <h2 className="text-3xl font-bold text-purple-700">Our Core Values</h2>
         <div className="grid md:grid-cols-3 gap-8">
           <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
@@ -38,6 +39,7 @@ const About = () => {
           </div>
         </div>
       </section>
+      </div>
 
       {/* Services */}
       <section className="px-6 md:px-20 py-20 bg-gradient-to-b from-purple-200 to-white space-y-10">
